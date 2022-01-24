@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i<array.length; i++){
+  const com = target - array[i]
+
+  for (let j = i+1; j<array.length; j++){
+  if (array[j] === com) return true
+
+  }
+}
+ return false
 }
 
 /* 
@@ -7,7 +15,9 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  add every number in the array to each other number in the array. 
+  if any two added numbers equal the target
+  return true.
 */
 
 /*
